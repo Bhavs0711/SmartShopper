@@ -1,0 +1,207 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Animated Logo */
+.logo-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeOut 1s ease 2s forwards;
+  background: linear-gradient(120deg, #fcd7c3, #d4ecea);
+}
+
+.logo-animation h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  animation: bounce 1.5s ease;
+}
+
+.smart {
+  color: #fc8f61;
+  font-weight: 700;
+}
+
+.shopper {
+  color: #4ebaaa;
+  font-weight: 700;
+}
+
+@keyframes bounce {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; height: 0; }
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box input {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Outfit', sans-serif;
+}
+
+.user-icon {
+  font-size: 1.2rem;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(180deg, #f8cfc2 0%, #e8f3f3 100%);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: inline-flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  width: 300px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.search-bar button {
+  background-color: #00b67a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Categories */
+.categories {
+  padding: 40px 60px;
+}
+
+.categories h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  width: 150px;
+}
+
+.category img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.category p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Hero Section with background image */
+.hero {
+  background-image: url('https://i.imgur.com/7n0J8aK.jpg'); /* Example working image */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* White Rounded Box */
+.hero-box {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.hero-box h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Search input + button */
+.search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-area input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 65%;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.search-area button {
+  background-color: #00b67a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
